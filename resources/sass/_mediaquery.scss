@@ -1,0 +1,155 @@
+
+@media (max-width:1000px) {
+  .nav {
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width:803px) {
+  .nav {
+    flex-wrap: nowrap;
+  }
+
+  .container{
+    .item_1, .item_2{
+      img{
+        width: 40vh;
+      }
+    }
+    .item_1 {
+      grid-column: 1/5;
+      grid-row: 1/1;
+    }
+    .box{
+      grid-row-start: 9;
+      grid-row-end: 14;
+    }
+  }
+}
+@media all and (max-width:800px) {
+
+  .flex-form {
+    width: 100%;
+  }
+
+  input[type="search"] {
+    flex-basis: 100%;
+  }
+
+  .flex-form > * {
+    font-size: 0.9rem;
+  }
+
+
+  .cover {
+    padding: 20px;
+  }
+
+}
+
+
+@media (max-width: 760px) {
+  .nav {
+    ul {
+      li {
+        display: none;
+      }
+    }
+  }
+
+  .container{
+    .item_1, .item_2{
+      img{
+        width: 30vh;
+      }
+    }
+    .item_1 {
+      grid-column: 1/5;
+      img{
+        margin: 0;
+      }
+    }
+    .item_2 {
+      img{
+        margin-right: 0;
+      }
+      .box_2{
+        margin: 0;
+      }
+    }
+    .box{
+      width: 100%;
+      grid-row-start: 8;
+      grid-row-end: 12;
+    }
+  }
+}
+
+@media (max-width:360px) {
+
+
+  h1{
+    a{
+      img{
+        width: 40%;
+        padding: 10px;
+      }
+    }
+
+  }
+
+  .head {
+    h2{
+      font-size: 3em;
+    }
+  }
+
+  .category{
+    h3{
+      font-size: 2em;
+    }
+  }
+
+
+  .container{
+    grid-template-rows: repeat(25, 40px);
+    .item_1{
+      grid-column-end: 20;
+      grid-column: 1/5;
+      grid-row: 1/2;
+      display: grid;
+      grid-template-rows: repeat(10, 20px);
+      img{
+        margin: 0 auto;
+      }
+    }
+
+    .item_2 {
+      display: grid;
+      grid-template-rows: repeat(10, 20px);
+      grid-column-end: 20;
+      grid-column: 1/1;
+      grid-row-start: -11;
+      img{
+        margin: 0 auto;
+      }
+    }
+
+  }
+  .flex-form {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  input[type="search"] {
+    flex-basis: 0;
+  }
+
+  label {
+    display: none;
+  }
+}
+
+
