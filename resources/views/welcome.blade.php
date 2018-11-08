@@ -18,16 +18,7 @@
     <body>
        <div class="app">
 
-           <header class="nav">
-               <h1><a href=""><img src="{{asset(('/images/logo.png'))}}" alt=""></a></h1>
-               <ul>
-                   <li><a href="#">Wanderrouten</a></li>
-                   <li><a href="#">Alternativ Aktivitäten</a></li>
-                   <li><a href="#">Hütte</a></li>
-                   <li><a href="#">Bergführer</a></li>
-
-               </ul>
-           </header>
+           @include('partials/nav')
 
            <div class="head">
                <h2>Willkommen in den Bergen</h2>
@@ -109,27 +100,6 @@
 
        </div>
 
-    <footer>
-        <ul>
-            <li><a href="#">Wanderrouten</a></li>
-            <li><a href="#">Alternativ Aktivitäten</a></li>
-            <li><a href="#">Hütte</a></li>
-            <li><a href="#">Bergführer</a></li>
-
-        </ul>
-
-        <ul>
-            <li><a href="#">Datenschutz</a></li>
-            <li><a href="#">Impressum</a></li>
-            <li><a href="#">Copyright</a></li>
-        </ul>
-
-
-        <ul>
-            <li><a href="#">www.wuandalust.at</a></li>
-            <li><a href="#">waundalust@austria.com</a></li>
-            <li><a href="#">0664/73872940</a></li>
-        </ul>
-    </footer>
+    @include('partials/footer')
     </body>
 </html>

@@ -9821,22 +9821,3 @@ a.text-dark:hover, a.text-dark:focus {
     text-decoration: none;
   }
 }
-
-/*@media all and (max-width:360px) {
-
-  .flex-form {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-  }
-
-  input[type="search"] {
-    flex-basis: 0;
-  }
-
-  label {
-    display: none;
-  }
-}*/
