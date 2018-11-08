@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <title>Waundalust</title>
 
@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('css/app.js')}}">
 
@@ -31,17 +33,17 @@
                             <input type="submit" value="Suchen">
                         </form>
                     </section>
-               <img style="width: 100%" src="/../images/home.png" alt="">
+               <img style="width: 100%" src="{{asset(('/images/home.png'))}}" alt="">
            </div>
 
-           <section class="category">
+           <section class=" container category">
 
                <h3>Die beliebtesten Wanderungen</h3>
 
-               <div class="container">
+               <div class="row">
 
-                    <div class="item_1">
-                        <img src="/../images/gasselhöhe_8.png" alt="">
+                    <div class="col">
+                        <img src="{{asset(('/images/gasselhöhe_8.png'))}}" alt="">
 
                         <div class="box_1 box">
                             <h4>Spiegelsee</h4>
@@ -53,12 +55,12 @@
 
                     </div>
 
-                    <div class="item_2">
-                        <img src="/../images/gasselhöhe_8.png" alt="">
+                    <div class="col">
+                        <img src="{{asset(('/images/gasselhöhe_8.png'))}}" alt="">
 
                         <div class="box_2 box">
                             <h4>Spiegelsee</h4>
-                            <p>Wunderschöne Wanderung zum Spiegelsee wo sich der Dachstein spiegelt.Wunderschöne Wanderung zum Spiegelsee wo sich der Dachstein spiegelt</p>
+                            <p>Wunderschöne Wanderung zum Spiegelsee wo sich der Dachstein spiegelt.Wunderschöne Wanderung zum Spiegelsee wo sich der Dachstein spiegelt.</p>
                         </div>
 
                     </div>
@@ -66,31 +68,30 @@
                </div>
            </section>
 
-           <section class="category category_2">
+           <section class="container category category_2">
 
                <h3>Alternative Aktivitäten</h3>
 
-               <div class="container">
+               <div class="row">
 
-                   <div class="item_1">
-                       <img src="/../images/gasselhöhe_8.png" alt="">
+                   <div class="col">
+                       <img src="{{asset(('/images/gasselhöhe_8.png'))}}" alt="">
 
                        <div class="box_1 box">
                            <h4>Spiegelsee</h4>
                            <p>Wunderschöne Wanderung zum Spiegelsee wo sich der Dachstein spiegelt. Wunderschöne Wanderung zum Spiegelsee wo sich der Dachstein spiegelt.
-                               <i class="ion-arrow"></i>
                            </p>
 
                        </div>
 
                    </div>
 
-                   <div class="item_2">
-                       <img src="/../images/gasselhöhe_8.png" alt="">
+                   <div class="col">
+                       <img src="{{asset(('/images/gasselhöhe_8.png'))}}" alt="">
 
                        <div class="box_2 box">
                            <h4>Spiegelsee</h4>
-                           <p>Wunderschöne Wanderung zum Spiegelsee wo sich der Dachstein spiegelt.Wunderschöne Wanderung zum Spiegelsee wo sich der Dachstein spiegelt</p>
+                           <p>Wunderschöne Wanderung zum Spiegelsee wo sich der Dachstein spiegelt.Wunderschöne Wanderung zum Spiegelsee wo sich der Dachstein spiegelt.</p>
                        </div>
 
                    </div>
