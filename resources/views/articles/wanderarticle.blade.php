@@ -1,0 +1,1 @@
+<wanderarticle-component></wanderarticle-component>
