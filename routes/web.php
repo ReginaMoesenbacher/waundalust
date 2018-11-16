@@ -15,3 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/wanderrouten', 'WanderroutenController@index');
+Route::get('/wanderrouten/create', 'WanderroutenController@create');
+Route::post('/wanderrouten', 'WanderroutenController@store');
+Route::get('/wanderrouten/{wanderroute}', 'WanderroutenController@show');
+//Route::get('/posts', 'PostsController@show');

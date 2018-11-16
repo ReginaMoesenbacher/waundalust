@@ -35,11 +35,12 @@
                <img style="width: 100%" src="{{asset(('/images/home.png'))}}" alt="">
            </div>
 
-           <section class=" container category">
+           <section class=" content category">
 
-               <h3>Die beliebtesten Wanderungen</h3>
+               <h3>Die beliebtesten Waundarungen</h3>
 
                <div class="row">
+
 
                     <div class="col">
                         <img src="{{asset(('/images/gasselhöhe_8.png'))}}" alt="">
@@ -54,6 +55,7 @@
 
                     </div>
 
+
                     <div class="col">
                         <img src="{{asset(('/images/gasselhöhe_8.png'))}}" alt="">
 
@@ -64,10 +66,11 @@
 
                     </div>
 
+
                </div>
            </section>
 
-           <section class="container category category_2">
+           <section class="content category category_2">
 
                <h3>Alternative Aktivitäten</h3>
 

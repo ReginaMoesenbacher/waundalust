@@ -11,7 +11,7 @@
     flex-wrap: nowrap;
   }
 
-  .container{
+  .content{
     .col{
       img{
         width: 40vh;
@@ -60,7 +60,7 @@
     }
   }
 
-  .container{
+  .content{
     .col{
       img{
         width: 30vh;
@@ -114,7 +114,7 @@
   }
 
 
-  .container{
+  .content{
     grid-template-rows: repeat(25, 40px);
     .col{
       grid-column-end: 20;

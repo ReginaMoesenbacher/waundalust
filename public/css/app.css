@@ -9510,10 +9510,10 @@ a.text-dark:hover, a.text-dark:focus {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  .container .col img {
+  .content .col img {
     width: 40vh;
   }
-  .container .box {
+  .content .box {
     width: 80%;
     grid-row-start: 7;
     grid-row-end: 14;
@@ -9542,16 +9542,16 @@ a.text-dark:hover, a.text-dark:focus {
   .nav ul li {
     display: none;
   }
-  .container .col img {
+  .content .col img {
     width: 30vh;
   }
-  .container .col img {
+  .content .col img {
     margin: 0;
   }
-  .container .col img {
+  .content .col img {
     margin-right: 0;
   }
-  .container .box {
+  .content .box {
     width: 80%;
     grid-row-start: 7;
     grid-row-end: 14;
@@ -9570,27 +9570,27 @@ a.text-dark:hover, a.text-dark:focus {
   .category h3 {
     font-size: 2em;
   }
-  .container {
+  .content {
     grid-template-rows: repeat(25, 40px);
   }
-  .container .col {
+  .content .col {
     grid-column-end: 20;
     grid-column: 1/5;
     grid-row: 1/2;
     display: grid;
     grid-template-rows: repeat(10, 20px);
   }
-  .container .col img {
+  .content .col img {
     margin: 0 auto;
   }
-  .container .col {
+  .content .col {
     display: grid;
     grid-template-rows: repeat(10, 20px);
     grid-column-end: 20;
     grid-column: 1/1;
     grid-row-start: -11;
   }
-  .container .col img {
+  .content .col img {
     margin: 0 auto;
   }
   .flex-form {
@@ -9676,12 +9676,8 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 4em;
     text-align: center;
   }
-  .row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
   .row img {
-    width: 50vh;
+    width: 60vh;
   }
   .box {
     width: 60%;

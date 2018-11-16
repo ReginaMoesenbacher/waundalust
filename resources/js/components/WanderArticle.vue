@@ -19,6 +19,6 @@
 
     export default {
         name:"wanderarticle-component",
-
+        props:"article",
     }
 </script>
