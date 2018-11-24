@@ -18,10 +18,17 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('admin');
 
-Route::get('/wanderrouten', 'WanderroutenController@index');
-Route::get('/wanderrouten/create', 'WanderroutenController@create');
-Route::post('/wanderrouten', 'WanderroutenController@store');
-Route::get('/wanderrouten/{wanderroute}', 'WanderroutenController@show');
-//Route::get('/posts', 'PostsController@show');
+Route::middleware('auth')->group(function() {
+
+Route::get('/admin/waundarouten', ['uses' => 'Backend\WaundaroutenController@index', 'as' => 'waundarouten.index']);
+Route::get('/admin/waundarouten/create', ['uses' => 'Backend\WaundaroutenController@create', 'as' => 'waundarouten.create']);
+Route::post('/admin/waundarouten', ['uses' => 'Backend\WaundaroutenController@store', 'as' => 'waundarouten.store']);
+Route::get('/admin/waundarouten/{waundarouten}', ['uses' => 'Backend\WaundaroutenController@show', 'as' => 'waundarouten.show']);
+Route::get('/admin/waundarouten/{iwaundaroutend}/edit', ['uses' => 'Backend\WaundaroutenController@edit', 'as' => 'waundarouten.edit']);
+Route::post('/admin/waundarouten/{waundarouten}', ['uses' => 'Backend\WaundaroutenController@update', 'as' => 'waundarouten.update']);
+Route::delete('/admin/waundarouten/{waundarouten}', ['uses' => 'Backend\WaundaroutenController@destroy', 'as' => 'waundarouten.destroy']);
+
+});
+

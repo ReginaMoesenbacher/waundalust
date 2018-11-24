@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateWanderrouten extends Migration
+class CreateWaundaroutensTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateWanderrouten extends Migration
      */
     public function up()
     {
-        Schema::create('wanderrouten', function (Blueprint $table) {
+        Schema::create('waundaroutens', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->time('length');
@@ -22,7 +22,7 @@ class CreateWanderrouten extends Migration
             $table->text('content');
             $table->text('preview');
             $table->text('image');
-
+            $table->string('mamps');
         });
     }
 
@@ -33,6 +33,6 @@ class CreateWanderrouten extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('wanderrouten');
+        Schema::dropIfExists('waundarouten');
     }
 }
